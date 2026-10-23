@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TV models by brand — Exercise 4</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-name" href="#top">COS30045</a>
+    <nav aria-label="Page sections"><a href="#chart">Chart</a><a href="#data">Data</a></nav>
+  </header>
+
+  <main id="top">
+    <div class="page-heading">
+      <p class="course-label">Exercises 4.3–4.7 <span>·</span> Week 4</p>
+      <h1>TV models by brand</h1>
+      <p>A horizontal bar chart made from a CSV file using D3.</p>
+    </div>
+
+    <section id="chart" class="section chart-section" aria-labelledby="chart-title">
+      <div class="section-heading">
+        <div><h2 id="chart-title">Number of models</h2><p>Brands are ordered by count, highest first.</p></div>
+        <span id="load-status" role="status">Loading CSV…</span>
+      </div>
+      <div class="chart-surface"><div class="responsive-svg-container" id="bar-chart"></div></div>
+      <p class="error" id="chart-error" hidden></p>
+      <p class="caption">Figure 1. Each bar shows the number of TV models for one brand.</p>
+    </section>
+
+    <section id="data" class="section data-section">
+      <h2>About the data</h2>
+      <p>The counts in <code>data/tvBrandCount.csv</code> are practice values. D3 converts <code>count</code> to a number, sorts the rows, then uses a linear scale for bar length and a band scale for brand positions. The loaded values are also printed in the browser console.</p>
+    </section>
+  </main>
+
+  <footer><span>COS30045 · Week 4</span><span>106212636</span></footer>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
