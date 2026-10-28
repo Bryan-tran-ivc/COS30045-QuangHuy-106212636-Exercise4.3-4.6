@@ -11,3 +11,7 @@ python3 -m http.server 5500
 ```
 
 Then visit `http://localhost:5500`.
+
+## AI declaration
+
+ChatGPT helped with the D3 bar chart, CSV loading and page styling.
