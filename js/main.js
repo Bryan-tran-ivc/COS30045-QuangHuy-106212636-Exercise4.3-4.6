@@ -35,8 +35,9 @@ const drawBarChart = data => {
     .range([0, 500])
     .padding(0.1);
   const colourScale = d3.scaleOrdinal()
-    .domain(data.map(d => d.brand))
-    .range(["#286fbd", "#ed7d31", "#2c9d66", "#d6535b", "#8b60bd", "#c59822", "#148f9c", "#b94b99", "#4673bd", "#d76c38", "#7355ae", "#79972d", "#ca4d78", "#258178"]);
+    .domain(["samsung", "kogan", "lg", "hisense"])
+    .range(["#ed7d31"])
+    .unknown("#286fbd");
 
   // Keep each bar and its labels together.
   const barAndLabel = svg
